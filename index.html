@@ -9,21 +9,32 @@
 </head>
 <body>
     
-<h1 align="center">¿Que te espera hoy dependiendo tu signo?</h1>
+<h1 align="center">Cada 10 clicks hay un meme c:(cuidado, es adictivo)</h1>
 
 
+<!-- Este boton llama a la funcion-->
+
+
+
+<!-- Front para nuestro contador de memes -->
 
 <div>
 
-    <p >Haz click en el botón para empezar</p>
-    <button onclick="signoZodiacal()">Empezar</button>
+    <h1>Contador de clicks</h1>
 
+    <h2 id="numeroContador"> 0 </h2>
+
+
+    <button id="botonIncrementar" >Incrementar</button>
+    <button id="botonDecrementar" >Decrementar</button>
+    <button id="botonResetear" >Resetear</button>
+
+    <img id="memeRandom" src="" alt="Meme Aleatorio" style="display: none;">
 
 </div>
 
 
-
     <!--Hasta el final del body van los scripts-->
-    <script src="./arreglos.js"></script>
+    <script src="./contadorMemes.js"></script>
 </body>
 </html>

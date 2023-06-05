@@ -166,3 +166,49 @@ console.log(listaDeComprasDeLaQuincena.indexOf("Chicharrones"));
 console.log("Resumen de compra");
 //Metodo para unir elementos de un arreglo en una cadena de texto
 console.log(listaDeComprasDeLaQuincena.join(" *** "));
+
+/* 
+The sort() sorts the elements of an array. It overwrites the original array and sorts the elements as strings in alphabetical and ascending order.
+
+The reverse() method reverses the order of the elements in an array.
+
+
+
+*/
+var equiposFutbol = ["Tigres", "America", "Chivas", "Cruz Azul", "Puebla"]
+console.log(equiposFutbol);
+
+equiposFutbol.reverse();
+console.log(equiposFutbol);
+
+equiposFutbol.sort();
+console.log(equiposFutbol);
+
+equiposFutbol.reverse();
+console.log(equiposFutbol);
+
+
+/* 
+Splice
+
+The splice() method adds and/or removes array elements.
+
+object.splice(2, 0, "Element1", "Element2");
+object.splice(Posición donde se aplica, cantidad de elementos que se eliminan, "Elemento a agregar 1", "Elemento a agregar 2"..."Elemento a agregar n");
+
+Para eliminar elementos solo es necesario poner la posición y la cantidad
+
+object.splice(1,2)  <- En la posición 1 elimina 2 elementos
+
+
+*/
+
+equiposFutbol.splice(0,0,"Pumas"); // Aqui agrega a Pumas en la posicion 0, no elimina ningun elemento
+
+console.log(equiposFutbol);
+
+
+
+equiposFutbol.splice(0,1); //Aqui Pumas fue eliminado
+
+console.log(equiposFutbol);
